@@ -65,11 +65,6 @@ object ChasingtailsCommand {
             val maxPlayers = ChasingtailsConfig.getMaxPlayers()
             val onlinePlayers = server.onlinePlayers.filter { it.gameMode != GameMode.SPECTATOR }
 
-            if (onlinePlayers.size !in 3..maxPlayers) {
-                sender.sendMessage(text("플레이어의 수가 7 ~ 8명 이어야합니다.", NamedTextColor.RED))
-                return@handler
-            }
-
             if (!isRunning) {
                 server.broadcast(text("\n".repeat(100)))
 
