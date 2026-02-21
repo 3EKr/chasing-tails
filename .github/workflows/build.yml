@@ -24,3 +24,8 @@ jobs:
 
       - name: Build
         run: ./gradlew build --stacktrace
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: My-Custom-Plugin
+          path: build/libs/*.jar
