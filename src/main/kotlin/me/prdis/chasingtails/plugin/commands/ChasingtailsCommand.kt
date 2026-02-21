@@ -69,7 +69,7 @@ object ChasingtailsCommand {
                 server.broadcast(text("\n".repeat(100)))
 
                 startGame()
-                server.broadcast(text("게임을 시작합니다.", NamedTextColor.GREEN))
+                server.broadcast(text("게임을 시작합니다.ㅋ", NamedTextColor.GREEN))
             } else {
                 sender.sendMessage(text("이미 게임이 진행중입니다.", NamedTextColor.RED))
             }
